@@ -9,12 +9,13 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
+
 namespace Domain.Commands.CommandsHandlers.Custumers
 {
     public class CustomerCommandHandler : CommandHandler,
-        IRequestHandler<RegisterNewCustomerCommand, ValidationResult>,
-        IRequestHandler<UpdateCustomerCommand, ValidationResult>,
-        IRequestHandler<RemoveCustomerCommand, ValidationResult>
+       IRequestHandler<RegisterNewCustomerCommand, ValidationResult>,
+       IRequestHandler<UpdateCustomerCommand, ValidationResult>,
+       IRequestHandler<RemoveCustomerCommand, ValidationResult>
     {
         private readonly ICustomerRepository _customerRepository;
 
